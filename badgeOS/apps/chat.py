@@ -1,5 +1,5 @@
 
-class App:
+class App():
     """
     Chat app
 

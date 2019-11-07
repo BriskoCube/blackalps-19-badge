@@ -13,6 +13,7 @@ BADGE.screen.show_logo()
 APPS = {}
 SCHEDULE = ''
 
+
 def app_load():
     global APPS
     modules = os.listdir('apps')
@@ -25,6 +26,7 @@ def app_load():
             sys.print_exception(e)
             continue
 
+
 # Load apps
 app_load()
 
@@ -33,8 +35,8 @@ try:
         #Main menu
         BADGE.screen.clear()
         BADGE.set_title("BadgeOS 0.2")
-        choice = BADGE.menu(list(APPS.keys()) + ['test'])
-
+        choice = BADGE.menu(list(APPS.keys()) )
+        '''+ ['test']'''
         #Test submenu
         if choice == 'test':
             test_choice = BADGE.menu(['text', 'logo', 'prompt'])

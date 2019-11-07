@@ -3,7 +3,7 @@ import time
 import random
 
 
-class App:
+class App():
 
     def __init__(self, badge):
         self.badge = badge

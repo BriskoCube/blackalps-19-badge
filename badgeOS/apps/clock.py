@@ -3,7 +3,7 @@ import machine
 import math
 import urequests
 
-class App:
+class App():
 
     CX = 64 # Center X position
     CY = 32 # Center Y position
